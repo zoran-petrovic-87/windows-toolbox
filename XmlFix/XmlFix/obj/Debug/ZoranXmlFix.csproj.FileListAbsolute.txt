@@ -1,0 +1,17 @@
+D:\cloud\Dropbox\development\in_progress\c#\ZoranXmlFix\ZoranXmlFix\bin\Debug\ZoranXmlFix.exe.config
+D:\cloud\Dropbox\development\in_progress\c#\ZoranXmlFix\ZoranXmlFix\bin\Debug\ZoranXmlFix.exe
+D:\cloud\Dropbox\development\in_progress\c#\ZoranXmlFix\ZoranXmlFix\bin\Debug\ZoranXmlFix.pdb
+D:\cloud\Dropbox\development\in_progress\c#\ZoranXmlFix\ZoranXmlFix\obj\Debug\ZoranXmlFix.Form1.resources
+D:\cloud\Dropbox\development\in_progress\c#\ZoranXmlFix\ZoranXmlFix\obj\Debug\ZoranXmlFix.Properties.Resources.resources
+D:\cloud\Dropbox\development\in_progress\c#\ZoranXmlFix\ZoranXmlFix\obj\Debug\ZoranXmlFix.csproj.GenerateResource.Cache
+D:\cloud\Dropbox\development\in_progress\c#\ZoranXmlFix\ZoranXmlFix\obj\Debug\ZoranXmlFix.exe
+D:\cloud\Dropbox\development\in_progress\c#\ZoranXmlFix\ZoranXmlFix\obj\Debug\ZoranXmlFix.pdb
+D:\cloud\Dropbox\development\done\C#\ZoranXmlFix\ZoranXmlFix\bin\Debug\ZoranXmlFix.exe.config
+D:\cloud\Dropbox\development\done\C#\ZoranXmlFix\ZoranXmlFix\bin\Debug\ZoranXmlFix.exe
+D:\cloud\Dropbox\development\done\C#\ZoranXmlFix\ZoranXmlFix\bin\Debug\ZoranXmlFix.pdb
+D:\cloud\Dropbox\development\done\C#\ZoranXmlFix\ZoranXmlFix\obj\Debug\ZoranXmlFix.csprojResolveAssemblyReference.cache
+D:\cloud\Dropbox\development\done\C#\ZoranXmlFix\ZoranXmlFix\obj\Debug\ZoranXmlFix.Form1.resources
+D:\cloud\Dropbox\development\done\C#\ZoranXmlFix\ZoranXmlFix\obj\Debug\ZoranXmlFix.Properties.Resources.resources
+D:\cloud\Dropbox\development\done\C#\ZoranXmlFix\ZoranXmlFix\obj\Debug\ZoranXmlFix.csproj.GenerateResource.Cache
+D:\cloud\Dropbox\development\done\C#\ZoranXmlFix\ZoranXmlFix\obj\Debug\ZoranXmlFix.exe
+D:\cloud\Dropbox\development\done\C#\ZoranXmlFix\ZoranXmlFix\obj\Debug\ZoranXmlFix.pdb

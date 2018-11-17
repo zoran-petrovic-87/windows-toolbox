@@ -28,4 +28,5 @@ D:\cloud\Dropbox\development\git\public\c#\windows-toolbox\ListMatcher\ListMatch
 D:\cloud\Dropbox\development\git\public\c#\windows-toolbox\ListMatcher\ListMatcher\obj\Release\ListMatcher.csproj.GenerateResource.cache
 D:\cloud\Dropbox\development\git\public\c#\windows-toolbox\ListMatcher\ListMatcher\obj\Release\ListMatcher.csproj.CoreCompileInputs.cache
 D:\cloud\Dropbox\development\git\public\c#\windows-toolbox\ListMatcher\ListMatcher\obj\Release\ListMatcher.exe
-D:\cloud\Dropbox\development\git\public\c#\windows-toolbox\ListMatcher\ListMatcher\obj\Release\ListMatcher.pdb
+D:\cloud\Dropbox\development\git\public\c#\windows-toolbox\_Release\ListMatcher.exe.config
+D:\cloud\Dropbox\development\git\public\c#\windows-toolbox\_Release\ListMatcher.exe
