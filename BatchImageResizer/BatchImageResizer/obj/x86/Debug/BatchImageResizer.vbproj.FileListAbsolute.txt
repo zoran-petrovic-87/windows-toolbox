@@ -1,0 +1,9 @@
+D:\Cloud\Dropbox\Programiranje\Visual Studio\BatchImageResizer\BatchImageResizer\bin\Debug\BatchImageResizer.exe
+D:\Cloud\Dropbox\Programiranje\Visual Studio\BatchImageResizer\BatchImageResizer\bin\Debug\BatchImageResizer.pdb
+D:\Cloud\Dropbox\Programiranje\Visual Studio\BatchImageResizer\BatchImageResizer\bin\Debug\BatchImageResizer.xml
+D:\Cloud\Dropbox\Programiranje\Visual Studio\BatchImageResizer\BatchImageResizer\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Cloud\Dropbox\Programiranje\Visual Studio\BatchImageResizer\BatchImageResizer\obj\x86\Debug\BatchImageResizer.vbproj.GenerateResource.Cache
+D:\Cloud\Dropbox\Programiranje\Visual Studio\BatchImageResizer\BatchImageResizer\obj\x86\Debug\BatchImageResizer.exe
+D:\Cloud\Dropbox\Programiranje\Visual Studio\BatchImageResizer\BatchImageResizer\obj\x86\Debug\BatchImageResizer.xml
+D:\Cloud\Dropbox\Programiranje\Visual Studio\BatchImageResizer\BatchImageResizer\obj\x86\Debug\BatchImageResizer.pdb
+D:\Cloud\Dropbox\Programiranje\Visual Studio\BatchImageResizer\BatchImageResizer\obj\x86\Debug\WindowsApplication1.Form1.resources
