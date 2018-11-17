@@ -1,0 +1,9 @@
+C:\Users\zoran.petrovic\documents\visual studio 2010\Projects\ScreenshotWithTimer\ScreenshotWithTimer\bin\Debug\ScreenshotWithTimer.exe
+C:\Users\zoran.petrovic\documents\visual studio 2010\Projects\ScreenshotWithTimer\ScreenshotWithTimer\bin\Debug\ScreenshotWithTimer.pdb
+C:\Users\zoran.petrovic\documents\visual studio 2010\Projects\ScreenshotWithTimer\ScreenshotWithTimer\bin\Debug\ScreenshotWithTimer.xml
+C:\Users\zoran.petrovic\documents\visual studio 2010\Projects\ScreenshotWithTimer\ScreenshotWithTimer\obj\x86\Debug\ScreenshotWithTimer.Form1.resources
+C:\Users\zoran.petrovic\documents\visual studio 2010\Projects\ScreenshotWithTimer\ScreenshotWithTimer\obj\x86\Debug\ScreenshotWithTimer.Resources.resources
+C:\Users\zoran.petrovic\documents\visual studio 2010\Projects\ScreenshotWithTimer\ScreenshotWithTimer\obj\x86\Debug\ScreenshotWithTimer.vbproj.GenerateResource.Cache
+C:\Users\zoran.petrovic\documents\visual studio 2010\Projects\ScreenshotWithTimer\ScreenshotWithTimer\obj\x86\Debug\ScreenshotWithTimer.exe
+C:\Users\zoran.petrovic\documents\visual studio 2010\Projects\ScreenshotWithTimer\ScreenshotWithTimer\obj\x86\Debug\ScreenshotWithTimer.xml
+C:\Users\zoran.petrovic\documents\visual studio 2010\Projects\ScreenshotWithTimer\ScreenshotWithTimer\obj\x86\Debug\ScreenshotWithTimer.pdb
