@@ -92,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
+    <None Include="media\icon_gui-swap.png" />
     <None Include="media\icon_gui-run.png" />
     <None Include="media\icon_gui-run.jpg" />
     <None Include="media\icon_gui-export.png" />

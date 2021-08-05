@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
@@ -61,6 +61,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chkTrim = new System.Windows.Forms.CheckBox();
+            this.tsmiSwapLists = new System.Windows.Forms.ToolStripMenuItem();
             this.btnRun = new System.Windows.Forms.Button();
             this.tsmiImport = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiTsvToList1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,6 +73,7 @@
             this.tsmiClearList1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiClearList2 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiClearResult = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -106,7 +109,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel4);
-            this.splitContainer1.Size = new System.Drawing.Size(627, 261);
+            this.splitContainer1.Size = new System.Drawing.Size(867, 261);
             this.splitContainer1.SplitterDistance = 128;
             this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 0;
@@ -125,8 +128,8 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel3);
-            this.splitContainer2.Size = new System.Drawing.Size(627, 128);
-            this.splitContainer2.SplitterDistance = 302;
+            this.splitContainer2.Size = new System.Drawing.Size(867, 128);
+            this.splitContainer2.SplitterDistance = 417;
             this.splitContainer2.SplitterWidth = 3;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -143,7 +146,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(302, 128);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(417, 128);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // lblList1
@@ -159,14 +162,14 @@
             // dgvList1
             // 
             this.dgvList1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvList1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvList1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvList1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvList1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colList1Value,
@@ -176,7 +179,7 @@
             this.dgvList1.Margin = new System.Windows.Forms.Padding(2);
             this.dgvList1.Name = "dgvList1";
             this.dgvList1.RowTemplate.Height = 24;
-            this.dgvList1.Size = new System.Drawing.Size(298, 111);
+            this.dgvList1.Size = new System.Drawing.Size(413, 111);
             this.dgvList1.TabIndex = 1;
             // 
             // colList1Value
@@ -202,7 +205,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(322, 128);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(447, 128);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // lblList2
@@ -218,14 +221,14 @@
             // dgvList2
             // 
             this.dgvList2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvList2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvList2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvList2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvList2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colList2Value,
@@ -235,7 +238,7 @@
             this.dgvList2.Margin = new System.Windows.Forms.Padding(2);
             this.dgvList2.Name = "dgvList2";
             this.dgvList2.RowTemplate.Height = 24;
-            this.dgvList2.Size = new System.Drawing.Size(318, 111);
+            this.dgvList2.Size = new System.Drawing.Size(443, 111);
             this.dgvList2.TabIndex = 1;
             // 
             // colList2Value
@@ -261,7 +264,7 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(627, 130);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(867, 130);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // lblResult
@@ -277,14 +280,14 @@
             // dgvListResult
             // 
             this.dgvListResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListResult.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListResult.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvListResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colListResultList1Value,
@@ -296,7 +299,7 @@
             this.dgvListResult.Margin = new System.Windows.Forms.Padding(2);
             this.dgvListResult.Name = "dgvListResult";
             this.dgvListResult.RowTemplate.Height = 24;
-            this.dgvListResult.Size = new System.Drawing.Size(623, 113);
+            this.dgvListResult.Size = new System.Drawing.Size(863, 113);
             this.dgvListResult.TabIndex = 1;
             // 
             // colListResultList1Value
@@ -334,7 +337,7 @@
             this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelMain.Size = new System.Drawing.Size(631, 356);
+            this.tableLayoutPanelMain.Size = new System.Drawing.Size(871, 356);
             this.tableLayoutPanelMain.TabIndex = 1;
             // 
             // tableLayoutPanel5
@@ -352,7 +355,7 @@
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(627, 24);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(867, 24);
             this.tableLayoutPanel5.TabIndex = 2;
             // 
             // lblNotFoundValue
@@ -372,27 +375,29 @@
             this.txtNotFoundValue.Location = new System.Drawing.Point(106, 2);
             this.txtNotFoundValue.Margin = new System.Windows.Forms.Padding(2);
             this.txtNotFoundValue.Name = "txtNotFoundValue";
-            this.txtNotFoundValue.Size = new System.Drawing.Size(519, 20);
+            this.txtNotFoundValue.Size = new System.Drawing.Size(759, 20);
             this.txtNotFoundValue.TabIndex = 1;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.chkIgnoreTextCase, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnRun, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblFindDesc, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.chkTrim, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 295);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(627, 59);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(867, 59);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // chkIgnoreTextCase
@@ -425,7 +430,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(631, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(871, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -442,12 +447,33 @@
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiSwapLists,
+            this.toolStripSeparator1,
             this.tsmiClearList1,
             this.tsmiClearList2,
             this.tsmiClearResult});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // chkTrim
+            // 
+            this.chkTrim.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.chkTrim.AutoSize = true;
+            this.chkTrim.Location = new System.Drawing.Point(554, 21);
+            this.chkTrim.Name = "chkTrim";
+            this.chkTrim.Size = new System.Drawing.Size(156, 17);
+            this.chkTrim.TabIndex = 4;
+            this.chkTrim.Text = "Trim whitespace characters";
+            this.chkTrim.UseVisualStyleBackColor = true;
+            // 
+            // tsmiSwapLists
+            // 
+            this.tsmiSwapLists.Image = global::ListMatcher.Properties.Resources.icon_gui_swap;
+            this.tsmiSwapLists.Name = "tsmiSwapLists";
+            this.tsmiSwapLists.Size = new System.Drawing.Size(180, 22);
+            this.tsmiSwapLists.Text = "Swap lists";
+            this.tsmiSwapLists.Click += new System.EventHandler(this.tsmiSwapLists_Click);
             // 
             // btnRun
             // 
@@ -529,7 +555,7 @@
             // 
             this.tsmiClearList2.Image = ((System.Drawing.Image)(resources.GetObject("tsmiClearList2.Image")));
             this.tsmiClearList2.Name = "tsmiClearList2";
-            this.tsmiClearList2.Size = new System.Drawing.Size(136, 22);
+            this.tsmiClearList2.Size = new System.Drawing.Size(180, 22);
             this.tsmiClearList2.Text = "Clear List 2";
             this.tsmiClearList2.Click += new System.EventHandler(this.tsmiClearList2_Click);
             // 
@@ -537,15 +563,20 @@
             // 
             this.tsmiClearResult.Image = ((System.Drawing.Image)(resources.GetObject("tsmiClearResult.Image")));
             this.tsmiClearResult.Name = "tsmiClearResult";
-            this.tsmiClearResult.Size = new System.Drawing.Size(136, 22);
+            this.tsmiClearResult.Size = new System.Drawing.Size(180, 22);
             this.tsmiClearResult.Text = "Clear Result";
             this.tsmiClearResult.Click += new System.EventHandler(this.tsmiClearResult_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 380);
+            this.ClientSize = new System.Drawing.Size(871, 380);
             this.Controls.Add(this.tableLayoutPanelMain);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -553,6 +584,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMain";
             this.Text = "List Matcher";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -624,6 +656,9 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiClearList2;
         private System.Windows.Forms.ToolStripMenuItem tsmiClearResult;
         private System.Windows.Forms.Label lblFindDesc;
+        private System.Windows.Forms.CheckBox chkTrim;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSwapLists;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 

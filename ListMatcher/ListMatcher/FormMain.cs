@@ -171,6 +171,7 @@ namespace ListMatcher
 
         private void btnRun_Click(object sender, EventArgs e)
         {
+            int notFoundCount = 0;
             foreach (DataGridViewRow row1 in dgvList1.Rows)
             {
                 bool found = false;
@@ -183,6 +184,10 @@ namespace ListMatcher
                     if (chkIgnoreTextCase.Checked)
                     {
                         sVal1 = sVal1.ToUpper();
+                    }
+                    if (chkTrim.Checked)
+                    {
+                        sVal1 = sVal1.Trim();
                     }
                     if (meta1 != null)
                     {
@@ -200,6 +205,10 @@ namespace ListMatcher
                             {
                                 sVal2 = sVal2.ToUpper();
                             }
+                            if (chkTrim.Checked)
+                            {
+                                sVal2 = sVal2.Trim();
+                            }
                             if (meta2 != null)
                             {
                                 sMeta2 = meta2.ToString();
@@ -214,6 +223,7 @@ namespace ListMatcher
                     }
                     if (!found)
                     {
+                        notFoundCount++;
                         var row = new DataGridViewRow();
                         row.CreateCells(dgvListResult, sVal1, sMeta1, txtNotFoundValue.Text, "");
                         dgvListResult.Rows.Add(row);
@@ -222,7 +232,31 @@ namespace ListMatcher
                     }
                 }
             }
-            MessageBox.Show("Done!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(
+                $"Done! There was {notFoundCount} items in list 1 that were not found in list 2.",
+                "Info",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void tsmiSwapLists_Click(object sender, EventArgs e)
+        {
+            dgvList1.AllowUserToAddRows = false;
+            dgvList2.AllowUserToAddRows = false;
+
+            DataGridViewRow[] rows1 = new DataGridViewRow[dgvList1.Rows.Count];
+            dgvList1.Rows.CopyTo(rows1, 0);
+
+            DataGridViewRow[] rows2 = new DataGridViewRow[dgvList2.Rows.Count];
+            dgvList2.Rows.CopyTo(rows2, 0);
+
+            dgvList1.Rows.Clear();
+            dgvList2.Rows.Clear();
+
+            dgvList1.Rows.AddRange(rows2);
+            dgvList2.Rows.AddRange(rows1);
+
+            dgvList1.AllowUserToAddRows = true;
+            dgvList2.AllowUserToAddRows = true;
         }
     }
 }
